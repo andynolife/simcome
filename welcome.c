@@ -24,7 +24,7 @@ int main() {
   int getlogin_r(char *buf, size_t bufsize);
   char username[256];
   if (getlogin_r(username, sizeof(username)) == 0) {
-    printf("%s, %s!. Current Time and Date is: %d-%02d-%d %02d:%02d:%02d\n", greetings_time, username, localTime->tm_mday, localTime->tm_mon + 1, localTime->tm_year + 1900, localTime->tm_hour, localTime->tm_min, localTime->tm_sec);
+    printf("%s, %s!. Today Time and Date: %d-%02d-%d %02d:%02d:%02d\n", greetings_time, username, localTime->tm_mday, localTime->tm_mon + 1, localTime->tm_year + 1900, localTime->tm_hour, localTime->tm_min, localTime->tm_sec);
   } else {
     printf("Can't get the username!\n");
   }
