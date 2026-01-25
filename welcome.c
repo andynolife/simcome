@@ -7,7 +7,7 @@ int main() {
   time_t currentTime;
   struct tm *localTime;
   int current_hour;
-  const char greetings[3[34] = {"Good Morning", "Good Evening", "Good Afternoon"};
+  const char greetings[3][34] = {"Good Morning", "Good Evening", "Good Afternoon"};
   char greetings_time[24];
   greetings_time[0] = '\0';
   time(&currentTime);
